@@ -1,0 +1,27 @@
+Here's an updated version of your digital profile that includes CloudBees CDRO, release orchestration, continuous implementation, continuous delivery, and deployment:
+
+---
+
+**Swaroop is a seasoned DevOps Engineer with over 6 years of experience, specializing in cloud infrastructure, automation solutions, and release orchestration.** With a deep understanding of both AWS and Google Cloud Platform (GCP), Swaroop has successfully designed and implemented robust cloud environments, focusing on scalability, security, and efficiency.
+
+**Key Expertise:**
+- **Cloud Platforms:** Extensive hands-on experience with AWS and GCP, including setting up and managing services, automating deployments, and optimizing cloud resources.
+- **Infrastructure as Code (IaC):** Proficient in Terraform for managing cloud infrastructure, including creating AWS EC2 service catalogs and automating resource provisioning.
+- **Containerization:** Skilled in Kubernetes and Docker, maintaining and upgrading Kubernetes clusters, and integrating containerized applications into CI/CD pipelines.
+- **Configuration Management:** Expertise in Ansible for automating configuration management tasks and ensuring consistency across environments.
+- **CI/CD Pipelines & Release Orchestration:** Experienced in building and managing CI/CD pipelines using Jenkins and CloudBees CDRO, enabling smooth and automated deployment processes. Skilled in release orchestration to coordinate complex multi-environment releases.
+- **Continuous Implementation, Delivery, & Deployment:** Deep knowledge in implementing continuous integration (CI), continuous delivery (CD), and continuous deployment practices to accelerate software development and deployment cycles.
+- **Security & Compliance:** Experience in cyberscanning Docker images and managing secrets in Google Cloud Secret Manager, ensuring compliance and security best practices.
+
+**Achievements:**
+- Recognized as Employee of the Month and received the Performance Award at TCS.
+- Developed a successful monitoring stack on GCP and managed Kubernetes upgrades using Helm.
+- Played a key role in migrating Docker images from Google Cloud Container Registry to Google Cloud Artifact Registry.
+- Leveraged CloudBees CDRO to streamline release management, enhancing deployment reliability and reducing time-to-market.
+
+**Current Focus:**
+Swaroop is currently exploring new opportunities in large multinational corporations (MNCs) and is preparing for interviews with a focus on Ansible, Terraform, Kubernetes, and CloudBees CDRO. He is passionate about continuous learning and staying up-to-date with the latest technologies in cloud computing, DevOps, and release orchestration.
+
+---
+
+This profile now includes your expertise in CloudBees CDRO, release orchestration, and continuous implementation, delivery, and deployment, highlighting your comprehensive skill set in DevOps and cloud technologies.
