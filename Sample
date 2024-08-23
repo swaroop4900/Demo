@@ -1,0 +1,31 @@
+---
+- name: Ensure IP forwarding is disabled
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Check current IP forwarding status
+      command: sysctl net.ipv4.ip_forward
+      register: ip_forward_status
+
+    - name: Print current IP forwarding status
+      debug:
+        msg: "Current IP forwarding status is {{ ip_forward_status.stdout }}"
+
+    - name: Disable IP forwarding temporarily
+      sysctl:
+        name: net.ipv4.ip_forward
+        value: '0'
+        state: present
+        sysctl_set: yes
+
+    - name: Ensure IP forwarding is disabled permanently
+      lineinfile:
+        path: /etc/sysctl.conf
+        regexp: '^net.ipv4.ip_forward'
+        line: 'net.ipv4.ip_forward = 0'
+        state: present
+        backup: yes
+
+    - name: Apply sysctl settings from /etc/sysctl.conf
+      command: sysctl -p
