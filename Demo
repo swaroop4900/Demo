@@ -1,6 +1,12 @@
-Description:
+**Jira Ticket Summary:**
+"Credential Setup for Automation Jobs in Jenkins"
 
-Merge all the development code from the feature branch into the master branch in the Git repository.
-Ensure the merge is successful without conflicts.
-Conduct post-verification checks to confirm that the code works as expected in the master branch.
-Ensure that all tests pass and that the integration with other systems or branches is smooth.
+**Description:**
+1. Set up credentials for each automation job within Jenkins, ensuring secure and consistent access for the jobs.
+2. Configure credentials for both regular and one-time jobs to streamline their execution.
+3. Ensure that the credential management aligns with security policies and best practices.
+4. Validate that each job can access the required resources using the configured credentials.
+5. Perform testing to ensure successful execution of jobs without credential-related issues.
+6. Document the setup process and any potential improvements for future reference.
+
+Would you like to add more specific details about the types of credentials or jobs involved?
