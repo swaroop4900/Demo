@@ -1,17 +1,6 @@
-Here's a condensed version of your responsibilities, fitting within 500 characters:
+Description:
 
----
-
-**Responsibilities:**
-
-- Manage and optimize cloud infrastructure on AWS and GCP.
-- Develop IaC using Terraform for automated provisioning.
-- Deploy and maintain Kubernetes clusters, integrate Docker in CI/CD.
-- Build and manage CI/CD pipelines with Jenkins and CloudBees CDRO.
-- Coordinate multi-environment releases, ensuring smooth deployments.
-- Automate tasks with Ansible, ensure security and compliance.
-- Collaborate across teams, troubleshoot, and optimize systems.
-
----
-
-This summary is concise and focused, covering your key responsibilities.
+Merge all the development code from the feature branch into the master branch in the Git repository.
+Ensure the merge is successful without conflicts.
+Conduct post-verification checks to confirm that the code works as expected in the master branch.
+Ensure that all tests pass and that the integration with other systems or branches is smooth.
