@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Define Nexus and GCP Artifact Registry credentials and repositories
+NEXUS_URL="https://nexus.example.com/repository/docker-repo"
+GCP_PROJECT_ID="your-gcp-project"
+GCP_ARTIFACT_REPO="gcr.io"
+GCP_REGION="your-region"
+NEXUS_USER="your-nexus-username"
+NEXUS_PASSWORD="your-nexus-password"
+
+# Define images and tags
+images=("image1:tag" "image2:tag" "image3:tag" "image4:tag" "image5:tag" "image6:tag")
+
+# Authenticate with GCP (assumes you have gcloud installed and authenticated)
+gcloud auth configure-docker ${GCP_REGION}-${GCP_ARTIFACT_REPO}
+
+# Loop through the images and process each
+for image in "${images[@]}"; do
+    echo "Processing image: ${image}"
+    
+    # Pull image from Nexus
+    docker login -u ${NEXUS_USER} -p ${NEXUS_PASSWORD} ${NEXUS_URL}
+    docker pull ${NEXUS_URL}/${image}
+
+    # Tag image for Google Cloud Artifact Registry
+    docker tag ${NEXUS_URL}/${image} ${GCP_REGION}-${GCP_ARTIFACT_REPO}/${GCP_PROJECT_ID}/${image}
+
+    # Push image to Google Cloud Artifact Registry
+    docker push ${GCP_REGION}-${GCP_ARTIFACT_REPO}/${GCP_PROJECT_ID}/${image}
+
+    echo "Successfully pushed ${image} to GCP Artifact Registry"
+done
+
+echo "All images processed successfully!"
