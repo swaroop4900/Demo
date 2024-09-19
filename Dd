@@ -1,0 +1,18 @@
+{
+  "lifecyclePolicy": {
+    "rules": [
+      {
+        "name": "cleanup-policy",
+        "filter": {
+          "artifactType": "DOCKER_IMAGE",
+          "version": {
+            "maxAge": "180d"
+          }
+        },
+        "action": {
+          "type": "DELETE"
+        }
+      }
+    ]
+  }
+}
