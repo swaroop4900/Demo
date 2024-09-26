@@ -1,18 +1,32 @@
-{
-  "lifecyclePolicy": {
-    "rules": [
-      {
-        "name": "cleanup-policy",
-        "filter": {
-          "artifactType": "DOCKER_IMAGE",
-          "version": {
-            "maxAge": "180d"
-          }
-        },
-        "action": {
-          "type": "DELETE"
-        }
-      }
-    ]
-  }
-}
+Here is an example of how you can create a Jira ticket for upgrading the NGINX package from EL7 to EL8 across all instances:
+
+---
+
+**Ticket Title:** Upgrade NGINX package from EL7 to EL8 across all instances
+
+**Description:**
+
+I am planning to upgrade the NGINX package from EL7 to EL8 across all instances to ensure compatibility with the latest OS version and security updates.
+
+**Tasks:**
+
+1. Identify all instances running EL7 with NGINX.
+2. Prepare the upgrade plan, including backup and rollback procedures.
+3. Schedule the upgrade in non-production environments and monitor performance.
+4. Perform the upgrade in production environments during the approved maintenance window.
+5. Validate the upgrade and ensure NGINX is running correctly on EL8.
+6. Document the changes and inform the relevant stakeholders.
+
+**Impact:**  
+- Minimal downtime is expected during the upgrade process.
+- All instances will require a restart of NGINX after the upgrade.
+
+**Priority:** Medium
+
+**Assignee:** [Assign to the relevant team/person]
+
+**Due Date:** [Set appropriate date based on the schedule]
+
+---
+
+Feel free to adjust any of the details to match your requirements or Jira setup!
