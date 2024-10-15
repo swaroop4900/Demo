@@ -1,25 +1,13 @@
-pipeline {
-    agent any
-    stages {
-        stage('Show Credentials') {
-            steps {
-                script {
-                    def credentials = usernamePassword(
-                        credentialsId: 'your-credentials-id',
-                        usernameVariable: 'USERNAME',
-                        passwordVariable: 'PASSWORD'
-                    )
-                    
-                    // Define the file path in the workspace
-                    def credentialsFile = 'credentials.txt'
-                    
-                    // Write the credentials to the file in the workspace
-                    writeFile file: credentialsFile, text: "Username: ${env.USERNAME}\nPassword: ${env.PASSWORD}"
-                    
-                    // Print the path to the console
-                    echo "Credentials stored in: ${env.WORKSPACE}/${credentialsFile}"
-                }
-            }
+node('cbcd-1010') {  // Specify the exact name of the agent (node)
+    stage('Show Credentials') {
+        script {
+            def credentials = usernamePassword(
+                credentialsId: 'your-credentials-id',
+                usernameVariable: 'USERNAME',
+                passwordVariable: 'PASSWORD'
+            )
+            echo "Username: ${env.USERNAME}"
+            echo "Password: ${env.PASSWORD}"
         }
     }
 }
