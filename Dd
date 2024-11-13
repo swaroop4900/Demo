@@ -1,32 +1,16 @@
-Here is an example of how you can create a Jira ticket for upgrading the NGINX package from EL7 to EL8 across all instances:
+Here's a revised message that includes your mention of the Flexi Live this week:
 
 ---
 
-**Ticket Title:** Upgrade NGINX package from EL7 to EL8 across all instances
+**Subject: Change in Personal Plans and Availability Update**
 
-**Description:**
+Dear [Manager's Name],
 
-I am planning to upgrade the NGINX package from EL7 to EL8 across all instances to ensure compatibility with the latest OS version and security updates.
+I wanted to inform you about a change in my personal plans. Due to my Flexi Live schedule with TCS this week, I had originally planned my baby’s naming ceremony for Friday, November 15th. Unfortunately, an unexpected passing in my father-in-law’s family has required us, by tradition, to postpone the ceremony.
 
-**Tasks:**
+We are now looking to reschedule it for next week. I may need to be unavailable on Friday, November 22nd, but I’ll carry my laptop with me and can be accessible if any urgent work arises.
 
-1. Identify all instances running EL7 with NGINX.
-2. Prepare the upgrade plan, including backup and rollback procedures.
-3. Schedule the upgrade in non-production environments and monitor performance.
-4. Perform the upgrade in production environments during the approved maintenance window.
-5. Validate the upgrade and ensure NGINX is running correctly on EL8.
-6. Document the changes and inform the relevant stakeholders.
+Thank you for your understanding, and I apologize for the short notice. Please let me know if there’s anything specific you’d like me to address ahead of time.
 
-**Impact:**  
-- Minimal downtime is expected during the upgrade process.
-- All instances will require a restart of NGINX after the upgrade.
-
-**Priority:** Medium
-
-**Assignee:** [Assign to the relevant team/person]
-
-**Due Date:** [Set appropriate date based on the schedule]
-
----
-
-Feel free to adjust any of the details to match your requirements or Jira setup!
+Best regards,  
+[Your Name]
