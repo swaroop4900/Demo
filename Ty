@@ -1,0 +1,18 @@
+Here’s a polished and concise version that is straightforward and easy to understand:
+
+---
+
+Hi Team,
+
+I just spoke with Madhav about the PWC project, and he suggested a few actions:
+
+1) Madhav recommended deleting all pipelines and credentials instead of just disabling them. According to PWC, the URL mentioned on our Confluence page must be inaccessible after November 15. Currently, our Jenkins pipeline is only disabled, so it can still be re-enabled. My suggestion is to delete the entire Jenkins folder for production to ensure all pipelines and credentials are removed. Please confirm if this approach works for you.
+
+2) He also advised running any remaining pipelines today so we can identify any issues early. Please let me know your thoughts.
+
+**Terraform Pipeline Update:**
+
+I discussed the Terraform pipeline with Yogesh. Setting it up locally is complex due to several dependencies and may take from a day to a week. If we execute the Terraform pipeline tomorrow, it should avoid HGMS violations until December 12. If there are any P3 violations later, we can seek an exception. During this time, we can work on setting up the Terraform pipeline locally or on the platform, which could be beneficial for future learning.
+
+Thank you,  
+Swaroop Potta
